@@ -31,7 +31,7 @@ export const NavBar = (props) => {
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret >
                 </DropdownToggle>
-                <DropdownMenu rigth>
+                <DropdownMenu>
                   <DropdownItem>
                     Option 1
                   </DropdownItem>
@@ -44,8 +44,43 @@ export const NavBar = (props) => {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavLink to="/soluciones" activeClassName="active" className="nav-item nav-link" >Soluciones</NavLink>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret >
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    Option 1
+                  </DropdownItem>
+                  <DropdownItem>
+                    Option 2
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <NavLink to="/clientes" activeClassName="active" className="nav-item nav-link" >Clientes</NavLink>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret >
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem>
+                    Option 1
+                  </DropdownItem>
+                  <DropdownItem>
+                    Option 2
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <NavLink to="/nosotros" activeClassName="active" className="nav-item nav-link" >Nosotros</NavLink>
+              <NavLink to="/contacto" activeClassName="active" className="nav-item nav-link" >Contacto</NavLink>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
   );
