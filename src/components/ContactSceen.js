@@ -4,8 +4,8 @@ import React from 'react'
 
 export const ContactSceen = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+         <h1>Contact Screen</h1>   
+        </>
     )
 }

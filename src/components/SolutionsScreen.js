@@ -4,8 +4,8 @@ import React from 'react'
 
 export const SolutionsScreen = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <h1>Solutions Screen</h1>
+        </>
     )
 }

@@ -4,8 +4,8 @@ import React from 'react'
 
 export const ResourcesScreen = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <h1>Resources Screen</h1>
+        </>
     )
 }
