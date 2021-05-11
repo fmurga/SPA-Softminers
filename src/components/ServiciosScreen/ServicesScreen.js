@@ -1,6 +1,7 @@
 
 
 import React, { useMemo } from 'react';
+import { Helmet } from 'react-helmet';
 import { Redirect } from 'react-router';
 import { getPaginaById } from '../selectors/getPaginaById';
 import { CarouselClientes } from '../ui/CarouselClientes';
@@ -22,12 +23,19 @@ export const ServicesScreen = () => {
         subpagina,
         imagen
     } = paginas;
+    
     return (
-        <div className="wrapper">
-             <PageTitle pagina={pagina} titulo={titulo} subpagina={subpagina} imagen={imagen}/>
-             <BannerServicios2 />
-             <BannerServicios />
-            <CarouselClientes />
-        </div>
+        <>
+            <Helmet>
+                <title>SoftMiners | Servicios</title>
+            </Helmet>
+            <div className="wrapper">
+                <PageTitle pagina={pagina} titulo={titulo} subpagina={subpagina} imagen={imagen}/>
+                <BannerServicios2 />
+                <BannerServicios />
+                <CarouselClientes />
+            </div>
+        
+        </>
     )
 }

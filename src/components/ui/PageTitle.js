@@ -8,7 +8,8 @@ import PropTypes from 'prop-types'
 export const PageTitle = ({titulo, pagina, subpagina, imagen}) => {
 
     return (
-        <section id="pageTitle" className="page-title page-title-layout4 bg-overlay bg-parallax text-center bg-img" style={{backgroundImage: `url(${imagen})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
+
+        <section id="pageTitle" className="page-title bg-overlay bg-parallax text-center bg-img" style={{backgroundImage: `url(${imagen})`, backgroundPosition: 'center', backgroundSize: 'cover', padding: '200px 0 160px 0'}}>
             {/* <div className="bg-img"><img src={imagen} alt="background"/></div> */}
             <div className="container">
                 <div className="row">

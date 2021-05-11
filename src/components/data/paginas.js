@@ -20,14 +20,20 @@ export const paginas = [
         'subpagina': '',
         'imagen': '/assets/images/Banners/clientes_title.jpg'
     },
-        {
+    {
         'id': 'soluciones-ibm',
         'titulo': 'Soluciones IBM',
-        'pagina': 'soluciones',
-        'subpagina': 'Soluciones-ibm',
+        'pagina': 'Soluciones',
+        'subpagina': 'Soluciones IBM',
         'imagen': '/assets/images/Banners/ibm_title.jpg'
+    },
+    {
+        'id': 'soluciones-softexpert',
+        'titulo': 'Soluciones Softexpert',
+        'pagina': 'Soluciones',
+        'subpagina': 'SoftExpert Excellence Suite',
+        'imagen': '/assets/images/Banners/se_title.jpg'
     }
-
 
 ]
 

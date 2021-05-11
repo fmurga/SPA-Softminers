@@ -10,7 +10,6 @@ import './owl.css';
 export const CarouselClientes = () => {
     const options = {
     margin: 30,
-    responsiveClass: true,
     nav: false,
     dots: true,
     autoplay: true,

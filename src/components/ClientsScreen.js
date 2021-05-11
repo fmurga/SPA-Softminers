@@ -1,6 +1,7 @@
 
 
 import React, { useMemo } from 'react';
+import { Helmet } from 'react-helmet';
 import { Redirect } from 'react-router';
 import { getPaginaById } from './selectors/getPaginaById';
 import { PageTitle } from './ui/PageTitle';
@@ -22,6 +23,11 @@ export const ClientsScreen = () => {
 
     
     return (
+        <>
+        <Helmet>
+            <title>SoftMiners | Clientes</title>
+            <meta></meta>
+        </Helmet>
         <div className="wrapper">
             <PageTitle pagina={pagina} titulo={titulo} subpagina={subpagina} imagen={imagen}/>
             
@@ -150,5 +156,6 @@ export const ClientsScreen = () => {
                     </div>
                     </section>
         </div>
+        </>
     )
 }

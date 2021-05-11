@@ -106,16 +106,16 @@ $(function () {
 
 
     /*==========   Set Background-img to section   ==========*/
-    $('.bg-img').each(function () {
-        var imgSrc = $(this).children('img').attr('src');
-        $(this).parent().css({
-            'background-image': 'url(' + imgSrc + ')',
-            'background-size': 'cover',
-            'background-position': 'center',
-        });
-        $(this).parent().addClass('bg-img');
-        $(this).remove();
-    });
+    // $('.bg-img').each(function () {
+    //     var imgSrc = $(this).children('img').attr('src');
+    //     $(this).parent().css({
+    //         'background-image': 'url(' + imgSrc + ')',
+    //         'background-size': 'cover',
+    //         'background-position': 'center',
+    //     });
+    //     $(this).parent().addClass('bg-img');
+    //     $(this).remove();
+    // });
 
 
     /*==========   Add active class to accordions   ==========*/
@@ -245,13 +245,7 @@ $(function () {
     });
 
     /*==========   Projects Filtering and Sorting  ==========*/
-    var containerEl = document.querySelector('.lista2');
-
-    var mixer = mixitup(containerEl, {
-        controls: {
-            toggleLogic: 'and'
-        }
-    });
+  
 });
 
 

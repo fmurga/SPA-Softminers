@@ -28,10 +28,8 @@ export const BannerServicios = () => {
                             <a href="contacto.html" className="btn btn__white btn__bordered btn__hover2 btn__lg">Solicitar Consultor</a>
                         </div>
                     </div>
-                    
                     <div className="col-sm-12 col-md-12 col-lg-6 bg-overlay bg-overlay-4 pt-100 pb-100" style={{backgroundImage: `url(${imagen})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
                     </div>
-                    
                 </div>
                 
             </div>
