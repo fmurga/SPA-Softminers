@@ -1,10 +1,11 @@
 
 
 import React, { useMemo } from 'react'
+import { Helmet } from 'react-helmet';
 import { Redirect } from 'react-router';
-import { getPaginaById } from './selectors/getPaginaById';
-import { PageTitle } from './ui/PageTitle';
-import { ServiceLayout2 } from './ui/ServiceLayout2'
+import { getPaginaById } from '../selectors/getPaginaById';
+import { PageTitle } from '../ui/PageTitle';
+import { ServiceLayout2 } from '../ui/ServiceLayout2'
 
 export const SolutionsIbmScreen = () => {
 
@@ -30,9 +31,15 @@ export const SolutionsIbmScreen = () => {
     } = paginas;
     
     return (
-        <div className="wrapper">
-            <PageTitle pagina={pagina} titulo={titulo} subpagina={subpagina} imagen={imagen}/>
-            <ServiceLayout2 titulo={titulo1} subtitulo={subtitulo} descripcion={descripcion} link={link} nombreLink={nombreLink}/>
-        </div>
+        <>
+            <Helmet>
+                <title>Softminers | Soluciones | Soluciones IBM</title>
+                <meta name="keywords" content="Soluciones IBM, Watson, Cloud, IBM, Blockchain, Inteligencia Artificial" />
+            </Helmet>
+            <div className="wrapper">
+                <PageTitle pagina={pagina} titulo={titulo} subpagina={subpagina} imagen={imagen}/>
+                <ServiceLayout2 titulo={titulo1} subtitulo={subtitulo} descripcion={descripcion} link={link} nombreLink={nombreLink}/>
+            </div>
+        </>
     )
 }

@@ -7,9 +7,9 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 
 export const BannerServicios2 = () => {
-        const options = {
+    const options = {
     margin: 30,
-    responsiveClassName: true,
+    // responsiveclassname: true,
     nav: false,
     dots: true,
     autoplay: true,
@@ -27,7 +27,7 @@ export const BannerServicios2 = () => {
             items: 2,
         },
         700: {
-            items: 3,
+            items: 2,
         },
         1000: {
             items: 3,
@@ -49,9 +49,6 @@ export const BannerServicios2 = () => {
                     
                 </div>
                 
-
-
-
 
                 <div className="row">
                     <div className="col-sm-12 col-md-12 col-lg-12">

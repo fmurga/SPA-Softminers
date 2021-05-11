@@ -16,7 +16,7 @@ export const Footer = () => {
 
                         <div className="col-sm-12 col-md-12 col-lg-3 footer__widget footer__widget-about  mb-30">
                             <div className="footer__widget-content">
-                                <img src={"./assets/logos/logo-footer.png"} alt="logo"/>
+                                <img src={"/assets/logos/logo-footer.png"} alt="logo"/>
                             </div>
                         </div>
                         
@@ -40,9 +40,9 @@ export const Footer = () => {
                             <div className="footer__widget-content">
                                 <nav>
                                     <ul className="list-unstyled">
-                                        <li><Link to="/acerca-nosotros.html">Acerca de Softminers</Link></li>
-                                        <li><Link to="/servicios.html">Servicios</Link></li>
-                                        <li><Link to="/soluciones.html">Soluciones</Link></li>
+                                        <li><Link to="/acerca-nosotros">Acerca de Softminers</Link></li>
+                                        <li><Link to="/servicios">Servicios</Link></li>
+                                        <li><Link to="/soluciones">Soluciones</Link></li>
 
                                     </ul>
                                 </nav>
@@ -58,10 +58,10 @@ export const Footer = () => {
                             <div className="footer__widget-content">
                                 <nav>
                                     <ul className="list-unstyled">
-                                        <li><Link to="/clientes.html">Clientes</Link></li>
-                                        <li><Link to="/casos-exito.html">Casos de Exito</Link></li>
-                                        <li><Link to="/contacto.html">Contacto</Link></li>
-                                        <li><Link to="/recursos.html">Recursos</Link></li>
+                                        <li><Link to="/clientes">Clientes</Link></li>
+                                        <li><Link to="/casos-exito">Casos de Exito</Link></li>
+                                        <li><Link to="/contacto">Contacto</Link></li>
+                                        <li><Link to="/recursos">Recursos</Link></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -77,6 +77,7 @@ export const Footer = () => {
                                 <a href="skype:softminers?<action>"><FontAwesomeIcon icon={["fab", "skype"]}/></a>
                                 <a href="https://www.linkedin.com/in/juliomurga"><FontAwesomeIcon icon={["fab", "linkedin"]}/></a>
                                 <a href="https://twitter.com/softminers"><FontAwesomeIcon icon={["fab", "twitter"]}/></a>
+                                <a href="https://www.instagram.com/softminers/"><FontAwesomeIcon icon={["fab", "instagram"]}/></a>
                             </div>
                             
                         </div>
@@ -99,7 +100,7 @@ export const Footer = () => {
                             <div className="footer__copyright">
                                 <nav>
                                     <ul className="list-unstyled footer__copyright-links d-flex flex-wrap">
-                                        <li><Link> &copy; {(new Date().getFullYear())} Softminers. All rights reserved. </Link></li>
+                                        <li><Link to="/"> &copy; {(new Date().getFullYear())} Softminers. All rights reserved. </Link></li>
                                         <li><a href="/SOFTMINERS_DATAFISCAL.pdf">Información Fiscal</a></li>
                                         <li><Link to="/politica-privacidad">Politica de Privacidad</Link></li>
 

@@ -2155,8 +2155,8 @@ textarea.form-control {
 }
 
 .list-items li:before {
-  content: "";
-  font-family: "Fontawesome";
+  content: "\2713";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   left: 0;
 }
@@ -2588,7 +2588,7 @@ textarea.form-control {
 }
 
 .navbar .dropdown-menu .nav__item {
-  padding: 0 40px;
+  padding: 0 0px 0 30px;
   margin-right: 0;
 }
 
@@ -2648,7 +2648,7 @@ textarea.form-control {
 
 .navbar .dropdown-menu .nav__item .nav__item-link:hover {
   color: #0060A2;
-  padding-left: 18px;
+  padding-left: 25px;
 }
 
 .navbar .dropdown-menu .nav__item .nav__item-link:hover:after {
@@ -3220,7 +3220,7 @@ textarea.form-control {
 
   .navbar .nav__item.opened>i[data-toggle=dropdown]:before,
   .navbar .nav__item.show>i[data-toggle=dropdown]:before {
-    content: "";
+    content: "\f107";
   }
 
   .navbar .dropdown-menu {
@@ -3370,7 +3370,7 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu.wide-dropdown-menu {
-    min-width: 660px;
+    min-width: 850px;
     padding: 0;
     overflow: hidden;
   }
@@ -3466,7 +3466,7 @@ textarea.form-control {
   }
 
   .navbar .dropdown-menu.mega-dropdown-menu .nav__item .nav__item-link:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     content: "";
     position: absolute;
     top: auto;
@@ -4981,7 +4981,7 @@ textarea.form-control {
 }
 
 .features-list-layout2 .feature-list-item .feature__content:before {
-  font-family: "Fontawesome";
+  font-family: "Font Awesome 5 Free";
   content: "";
   color: #ffffff;
 }
@@ -5011,7 +5011,7 @@ textarea.form-control {
 }
 
 .features-list-layout3 .feature-list-item .feature__content:before {
-  font-family: "Fontawesome";
+  font-family: "Font Awesome 5 Free";
   content: "";
   color: #0060A2;
   font-size: 18px;

@@ -13,12 +13,14 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 
+
 //Library creation
 library.add(fas, fab);
 
 export const SoftminersApp = () => {
     return (
-
-        <AppRouter />
+        
+         <AppRouter />
+        
     )
 }
