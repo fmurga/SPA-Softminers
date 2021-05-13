@@ -57,7 +57,7 @@ $(function () {
     $win.on('scroll', function () {
         if ($win.width() >= 992) {
             var $navbar = $('.sticky-navbar-second');
-            if ($win.scrollTop() > 450) {
+            if ($win.scrollTop() > 400) {
                 $navbar.addClass('fixed-navbar-second');
             } else {
                 $navbar.removeClass('fixed-navbar-second');

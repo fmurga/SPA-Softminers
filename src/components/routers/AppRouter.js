@@ -1,12 +1,13 @@
 
 
-import React, { useMemo } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
+
 import { AboutScreen } from '../AboutScreen';
 import { ClientsScreen } from '../ClientsScreen';
 import { ContactSceen } from '../ContactSceen';
@@ -15,19 +16,19 @@ import { ResourcesScreen } from '../ResourcesScreen';
 import { ServicesScreen } from '../ServiciosScreen/ServicesScreen';
 import { SolutionsIbmScreen } from '../Soluciones/SolutionsIbmScreen';
 import { SolutionsSoftexpertScreen } from '../Soluciones/SolutionsSoftexpertScreen';
+import { SolutionsSapScreen } from '../Soluciones/SolutionsSapScreen';
 import { SolutionsScreen } from '../Soluciones/SolutionsScreen';
-import { Footer } from '../ui/Footer';
 
+import { Footer } from '../ui/Footer';
 import { NavBar } from '../ui/NavBar';
-import { getPaginaById } from '../selectors/getPaginaById';
-import { PageTitle } from '../ui/PageTitle';
+
 
 
 export const AppRouter = () => {
     return (
         <Router>
 
-                <NavBar />
+            <NavBar />
                 
             <div>
                 
@@ -42,7 +43,7 @@ export const AppRouter = () => {
                         <Route exact path="/soluciones" component={SolutionsScreen}></Route>
                         <Redirect from="/soluciones.html" to="/soluciones"></Redirect>
 
-                        <Route exact path="/soluciones/soluciones-sap" component={SolutionsScreen}></Route>
+                        <Route exact path="/soluciones/soluciones-sap" component={SolutionsSapScreen}></Route>
                         <Redirect from="/soluciones-sap.html" to="/soluciones/soluciones-sap"></Redirect>
 
                         <Route exact path="/soluciones/soluciones-ibm" component={SolutionsIbmScreen}></Route>

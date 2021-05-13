@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
 export const SolucionesCards = () => {
@@ -34,7 +34,7 @@ export const SolucionesCards = () => {
                                 crecimiento y estrategias para competir y ganar.</p>
                             <Link to="/soluciones/soluciones-ibm" className="btn btn__secondary btn__link">
                                 <span>Ampliar</span>
-                                <i className="icon-arrow-right2"></i>
+                                <i className="fa fa-arrow-right"></i>
                                 {/* <FontAwesomeIcon icon={faArrowRight}/> */}
                             </Link>
                         </div>
@@ -52,7 +52,7 @@ export const SolucionesCards = () => {
                             <br/>
                             <Link to="/soluciones/soluciones-sap" className="btn btn__secondary btn__link">
                                 <span>Ampliar</span>
-                                <i className="icon-arrow-right2"></i>
+                                <i className="fa fa-arrow-right"></i>
                                 {/* <FontAwesomeIcon icon={faArrowRight}/> */}
                             </Link>
                         </div>
@@ -70,7 +70,7 @@ export const SolucionesCards = () => {
                             <br/>
                             <Link to="/soluciones/soluciones-softexpert" className="btn btn__secondary btn__link">
                                 <span>Ampliar</span>
-                                <i className="icon-arrow-right2"></i>
+                                <i className="fa fa-arrow-right"></i>
                                 {/* <FontAwesomeIcon icon={faArrowRight}/> */}
                             </Link>
                         </div>

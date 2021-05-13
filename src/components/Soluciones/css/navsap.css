@@ -1,0 +1,55 @@
+.fixed-navbar-second {
+  position: fixed  !important;
+  top: 90px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1040;
+  border-bottom: 0 !important;
+  height: 90px;
+  max-height: 90px;
+  /* background-color: #ffffff !important; */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.07);
+  -webkit-animation: translateHeader 0.8s;
+  -moz-animation: translateHeader 0.8s;
+  -ms-animation: translateHeader 0.8s;
+  -o-animation: translateHeader 0.8s;
+  animation: translateHeader 0.8s;
+}
+
+.fixed-navbar-second>.container,
+.fixed-navbar-second>.container-fluid {
+  position: relative;
+  height: 90px;
+}
+
+.fixed-navbar-second .navbar-brand {
+  line-height: 90px;
+}
+
+.fixed-navbar-second .header__top-right {
+  display: none !important;
+}
+
+.fixed-navbar-second .nav__item .nav__item-link {
+  color: #333333;
+  line-height: 90px;
+}
+
+.fixed-navbar-second .logo-light {
+  display: none;
+}
+
+.fixed-navbar-second .logo-dark {
+  display: inline-block;
+}
+
+.fixed-navbar-second .navbar-nav {
+  margin-top: 0;
+}
+
+.fixed-navbar-second .module__btn,
+.fixed-navbar-second .module__btn i,
+.fixed-navbar-second .module__btn-phone a {
+  color: #333333;
+}

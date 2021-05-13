@@ -1454,7 +1454,7 @@ h6 {
 }
 
 .page-title-layout4 {
-  padding: 307px 0 212px;
+  padding: 100px 0 100px;
 }
 
 .page-title-layout4 .pagetitle__heading {
@@ -8280,4 +8280,7 @@ display:block; */
   background-color: black;
 }
 
-
+.sticky-top-sap{
+  position: sticky;
+  top: 400;
+}
