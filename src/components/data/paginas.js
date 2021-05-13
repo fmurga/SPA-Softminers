@@ -33,6 +33,13 @@ export const paginas = [
         'pagina': 'Soluciones',
         'subpagina': 'SoftExpert Excellence Suite',
         'imagen': '/assets/images/Banners/se_title.jpg'
+    },
+    {
+        'id': 'soluciones-sap',
+        'titulo': 'Soluciones SAP',
+        'pagina': 'Soluciones',
+        'subpagina': 'Soluciones SAP',
+        'imagen': '/assets/images/Banners/sap_title.jpg'
     }
 
 ]

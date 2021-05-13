@@ -2,24 +2,23 @@
 import React from 'react';
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const NavBar = (props) => {
   
 
   return (
-       
-            <nav className="navbar navbar-expand-lg bg-light navbar-light sticky-navbar">
+        <header id="header" className="header">
+            <nav className="navbar navbar-expand-lg sticky-navbar">
                 <div className="container">
                     <Link className="navbar-brand" to="/">
                         <img src={"/assets/logos/logo-light.png"} className="logo-light" alt="logo"/>
                         <img src={"/assets/logos/logo-dark.png"} className="logo-dark" alt="logo"/>
                     </Link>
-                    <div>
-                        <button className="navbar-toggler" type="button" id="toggle-first">
-                            <span className="menu-lines"><span></span></span>
-                        </button>
-                    </div>
+                    <button className="navbar-toggler" type="button" id="toggle-first">
+                        <span className="menu-lines"><span></span></span>
+                    </button>
+
 
                     <div className="collapse navbar-collapse" id="mainNavigation">
                         <ul className="navbar-nav ml-auto">
@@ -31,28 +30,23 @@ export const NavBar = (props) => {
                                 <NavLink activeClassName="active" to="/servicios" className="dropdown-toggle nav__item-link">Servicios</NavLink>
                                 <i className="fa fa-angle-right" data-toggle="dropdown"></i>
                                 <ul className="dropdown-menu">
-                                    <li className="nav__item"><Link className="nav__item-link" to="/servicios">Soporte
-                                            SAP,
-                                            SE</Link> </li>
-                                    
-                                    <li className="nav__item"><Link className="nav__item-link" to="/servicios">Gestión de
-                                            Indicencias</Link> </li>
-                                    
-                                    <li className="nav__item"><Link className="nav__item-link"
-                                            to="/servicios">Migraciones</Link> </li>
-                                    
-                                    <li className="nav__item"><Link className="nav__item-link"
-                                            to="/servicios">Consultoría</Link> </li>
-                                    
-                                    <li className="nav__item"><Link className="nav__item-link" to="/servicios">Proyectos a
-                                            Medida</Link> </li>
-                                    
+                                    <li className="nav__item">
+                                        <Link className="nav__item-link" to="/servicios">Soporte SAP, SE</Link>
+                                    </li>
+                                    <li className="nav__item">
+                                        <Link className="nav__item-link" to="/servicios">Gestión de Indicencias</Link> 
+                                    </li>
+                                    <li className="nav__item">
+                                        <Link className="nav__item-link" to="/servicios">Migraciones</Link> 
+                                    </li>
+                                    <li className="nav__item">
+                                        <Link className="nav__item-link" to="/servicios">Consultoría</Link>
+                                    </li>
+                                    <li className="nav__item">
+                                        <Link className="nav__item-link" to="/servicios">Proyectos a Medida</Link> 
+                                    </li>
                                 </ul>
-                                
                             </li>
-
-
-
                             
                             <li className="nav__item with-dropdown">
                                 <NavLink activeClassName="active" to="/soluciones" className="dropdown-toggle nav__item-link">Soluciones</NavLink>
@@ -64,81 +58,75 @@ export const NavBar = (props) => {
 
                                                 <ul className="nav flex-column">
                                                     <li>
-                                                        <h6 className="hover"> <Link to="/soluciones/soluciones-ibm">Soluciones
-                                                                IBM</Link>
+                                                        <h6 className="hover"> 
+                                                            <Link to="/soluciones/soluciones-ibm">Soluciones IBM</Link>
                                                         </h6>
                                                     </li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-ibm">Blockchain</Link></li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-ibm">Blockchain</Link>
+                                                    </li>
                                                     
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-ibm">Seguridad e
-                                                            indentidad</Link> </li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-ibm">Seguridad e indentidad</Link>
+                                                    </li>
                                                     
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-ibm">Internet de las
-                                                            cosas</Link> </li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-ibm">Internet de las cosas</Link>
+                                                    </li>
                                                     
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-ibm">Intelingencia
-                                                            artificial</Link> </li>
-                                                    
-
-                                                    
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-ibm">Intelingencia artificial</Link> 
+                                                    </li>
                                                 </ul>
                                             </div>
                                             
                                             <div className="col-sm dropdown-menu-col">
-
                                                 <ul className="nav flex-column">
                                                     <li>
                                                         <h6 className="hover"> <NavLink activeClassName="active" to="/soluciones/soluciones-sap"> Soluciones
                                                                 SAP</NavLink>
                                                         </h6>
                                                     </li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Soporte</Link></li>
-                                                    
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Proyectos</Link></li>
-                                                    
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Integración SAP</Link>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Soporte</Link>
                                                     </li>
-                                                    
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Testing SAP</Link>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Proyectos</Link>
                                                     </li>
-                                                    
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Consultoría</Link>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Integración SAP</Link>
                                                     </li>
-                                                    
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-sap">Factura
-                                                            Electrónica</Link></li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Testing SAP</Link>
+                                                    </li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Consultoría</Link>
+                                                    </li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-sap">Factura Electrónica</Link>
+                                                    </li>
                                                 </ul>
                                             </div>
-                                            <div className="col-sm dropdown-menu-col">
 
+                                            <div className="col-sm dropdown-menu-col">
                                                 <ul className="nav flex-column">
                                                     <li>
                                                         <h6 className="hover"> 
-                                                        <NavLink activeClassName="active" to="/soluciones/soluciones-softexpert">Soluciones
-                                                                SoftExpert</NavLink> </h6>
+                                                            <NavLink activeClassName="active" to="/soluciones/soluciones-softexpert">Soluciones SoftExpert</NavLink> 
+                                                        </h6>
                                                     </li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-softexpert">Calidad</Link>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-softexpert">Calidad</Link>
                                                     </li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-softexpert">Digitalización</Link>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-softexpert">Digitalización</Link>
                                                     </li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-softexpert">Gestión de
-                                                            Documentos</Link></li>
-                                                    <li className="nav__item"><Link className="nav__item-link"
-                                                            to="/soluciones/soluciones-softexpert">Gestión de
-                                                            Activos</Link></li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-softexpert">Gestión de Documentos</Link>
+                                                    </li>
+                                                    <li className="nav__item">
+                                                        <Link className="nav__item-link" to="/soluciones/soluciones-softexpert">Gestión de Activos</Link>
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div className="col-sm dropdown-menu-col">
@@ -226,7 +214,7 @@ export const NavBar = (props) => {
 
                 </div>
             </nav>
-        
+        </header>
                     
   );
 }
