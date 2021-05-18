@@ -7,7 +7,7 @@ export const ServiciosSap = () => {
             <div className="container">
                 <div className="row heading mb-40">
                 <div className="col-sm-12 col-md-6 col-lg-6">
-                    <span className="heading__subtitle">IBM Services</span>
+                    <span className="heading__subtitle">SAP Services</span>
                     <h2 className="heading__title">SAP, le brinda sus soluciones para gestionar desde PyMES hasta corporaciones.</h2>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6">

@@ -77,7 +77,21 @@ export const SolucionesCards = () => {
                         
                     </div>
                     
+                    <div className="col-sm-4 col-md-4 col-lg-4">
+                        <div className="job-item">
+                            <div className="service__icon"><img src="/assets/images/Partners/logo-softland-1.jpg" alt="Softland Logo" /></div>
+                            <h4 className="job__title">Soluciones Softland</h4>
 
+                            <p className="job__desc">La disrupción tecnológica impulsa a las compañías a digitalizar sus procesos con sistemas de gestión empresarial tipo ERP para hacer más ágiles sus tareas diarias. Softland propicia la inteligencia de las empresas con soluciones de software que se destacan por su innovación, calidad y confianza.</p>
+                            <br/>
+                            <Link to="/soluciones/soluciones-softexpert" className="btn btn__secondary btn__link">
+                                <span>Ampliar</span>
+                                <i className="fa fa-arrow-right"></i>
+                                {/* <FontAwesomeIcon icon={faArrowRight}/> */}
+                            </Link>
+                        </div>
+                        
+                    </div>
                 </div>
                 
 

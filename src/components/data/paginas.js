@@ -40,7 +40,14 @@ export const paginas = [
         'pagina': 'Soluciones',
         'subpagina': 'Soluciones SAP',
         'imagen': '/assets/images/Banners/sap_title.jpg'
-    }
+    },
+    {
+        'id': 'soluciones-softland',
+        'titulo': 'Soluciones Softland',
+        'pagina': 'Soluciones',
+        'subpagina': 'Soluciones Softland',
+        'imagen': '/assets/images/Banners/sap_title.jpg'
+    },
 
 ]
 

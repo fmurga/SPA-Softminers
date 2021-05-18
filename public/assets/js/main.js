@@ -39,7 +39,7 @@ $(function () {
         $(this).toggleClass('actived');
     })
     $navToggler2.on('click', function () {
-        $('#mainNavigation-2.navbar-collapse').toggleClass('menu-opened');
+        $('#mainNavigation2.navbar-collapse').toggleClass('menu-opened');
     })
 
     /*==========   Sticky Navbar   ==========*/

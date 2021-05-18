@@ -5,6 +5,7 @@ import { getPaginaById } from '../selectors/getPaginaById';
 import { CarouselClientes } from '../ui/CarouselClientes';
 import { CoberturaInternacional } from '../ui/CoberturaInternacional';
 import { PageTitle } from '../ui/PageTitle'
+import { Partners } from '../ui/Partners';
 import { NavSap } from './NavSap';
 
 export const SolutionsSapScreen = () => {
@@ -35,6 +36,7 @@ export const SolutionsSapScreen = () => {
                 <NavSap />
                 <CoberturaInternacional />
                 <CarouselClientes />
+                <Partners  />
             </div>
 
         </>
